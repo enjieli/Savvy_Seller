@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Starter Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+    .container2 {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .container3 {
+      position: relative;
+      text-align: center;
+      color: white;
+      transition: transform .2s; /* Animation */
+      z-index:1;
+    }
+    .container3:hover {
+      transform: scale(2.0);
+      z-index:10;
+    }
+    .text {
+      z-index: 100;
+      position: absolute;
+      -webkit-text-fill-color: limegreen; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-color: black;
+      font-size: 18px;
+      font-weight: bold;
+      top: 70%;
+      left: 2%;
+      right: 0;
+      bottom: 0;
+    }   
+    .centered {
+      position: absolute;
+      color:black;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -100%);
+    }
+    .myimage {
+      padding: 0px;
+      outline: 5px solid black;
+      margin: 0 auto;
+    }
+    
+    .overlaycaption {
+      position: relative;
+      transition: transform .2s; /* Animation */
+      color:black;
+      font-weight:bold;
+      top: 15%;
+      left: 50%;
+      -webkit-text-fill-color: limegreen; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      transform: translate(-50%, -50%);
+    }
+    .overlaycaption:hover + zoom{
+      transform: scale(2.0);
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+    </style>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="../static/css/ztext.css" rel="stylesheet">
+    <link href="../static/css/nestedgrid.css" rel="stylesheet">
+    <link href="../static/css/starter-template.css" rel="stylesheet">
+    <link href="../static/css/bettergrid.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Savvy Seller <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://relovv.com">Relovv</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://poshmark.com/">Poshmark</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+
+
+<main role="main" class="container">
+  <div class="container">
+      <div class="starter-template">
+      <br>
+      <br>
+      <br>
+ </div>
+    
+
+ <style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+  .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+  .tg .tg-wwlm{font-size:22px;font-family:"Lucida Console", Monaco, monospace !important;;border-color:#ffffff;text-align:left;vertical-align:top}
+  .tg .tg-0zhj{font-size:14px;font-family:"Lucida Console", Monaco, monospace !important;;border-color:#ffffff;text-align:left;vertical-align:top}
+  .tg .tg-vyd2{font-size:14px;font-family:"Lucida Console", Monaco, monospace !important;;text-align:left;vertical-align:top}
+  .tg .tg-nleg{font-size:14px;font-family:"Lucida Console", Monaco, monospace !important;;text-align:center;vertical-align:top}
+  .tg .tg-73oq{border-color:#000000;text-align:left;vertical-align:top}
+  </style>
+  
+  <table class="tg"> 
+    <tr>
+       <th class="tg-0zhj"><img src="{{input_path}}" width=200 height =200></img></th>
+       <th width=400 class="tg-wwlm" colspan="2">
+         <span>In the past 2 weeks, sale price of similar items ranged from ${{ min_sale_price }} to ${{ max_sale_price }}, and the average sale price was about ${{ mean_sale_price }}!</span>
+         <br>
+         <br>
+         <span style="font-weight:bold;color:rgb(49, 102, 255)">PRICE SMART, MAKE MORE!</span><br>
+        </th>
+      </tr>
+
+
+    <tr>
+      <td height=0.001 class="tg-73oq" colspan="3"></td>
+    </tr>
+ 
+    
+    <tr>
+      <td class="tg-vyd2">
+        <a href="{{poshmark_url_list[0]}}">
+          <img src="{{output_img_path_list[0]}}" width=200 height=200>
+        </a>
+      </td>
+      <td class="tg-vyd2">
+          <a href="{{poshmark_url_list[1]}}">
+            <img src="{{output_img_path_list[1]}}" width=200 height=200>
+          </a>     
+      </td>
+      <td class="tg-vyd2">
+        <a href="{{poshmark_url_list[2]}}">
+          <img src="{{output_img_path_list[2]}}" width=200 height=200>
+        </a>  
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td class="tg-nleg">${{sale_price_list[0]}}</td>
+      <td class="tg-nleg">${{sale_price_list[1]}}</td>
+      <td class="tg-nleg">${{sale_price_list[2]}}</td>
+    </tr>
+    
+    <tr>
+        <td class="tg-vyd2">
+          <a href="{{poshmark_url_list[3]}}">
+            <img src="{{output_img_path_list[3]}}" width=200 height=200>
+          </a>
+        </td>
+        <td class="tg-vyd2">
+            <a href="{{poshmark_url_list[4]}}">
+              <img src="{{output_img_path_list[4]}}" width=200 height=200>
+            </a>     
+        </td>
+        <td class="tg-vyd2">
+          <a href="{{poshmark_url_list[5]}}">
+            <img src="{{output_img_path_list[5]}}" width=200 height=200>
+          </a>  
+        </td>
+      </tr>
+
+    <tr>
+      <td class="tg-nleg">${{sale_price_list[3]}}</td>
+      <td class="tg-nleg">${{sale_price_list[4]}}</td>
+      <td class="tg-nleg">${{sale_price_list[5]}}</td>
+    </tr>
+
+  </table>
+  <script>
+      document.getElementsByClassName('tg-73oq')[0].style.borderLeftColor = 'white';
+      document.getElementsByClassName('tg-73oq')[0].style.borderRightColor = 'white';
+  </script>
