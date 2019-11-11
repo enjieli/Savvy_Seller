@@ -1,5 +1,5 @@
 # Savvy_Seller
-a data app to predict clothing sale prices based on the photos of a item and brand name
+a data app to predict clothing sale prices based on the photos of a item and brand name: http://www.predictiveanalytics.best/
 
 Steps:
 1.Used AWS to scrape daily sale histories from online clothing resale marketplaces. Each sale history includes photos of the item, brand name, as well as final sale prices.
